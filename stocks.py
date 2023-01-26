@@ -1,5 +1,8 @@
-#CS175L
 #Sophia Ramirez Velandia
+#CS175L 01
+#Professor Eckert Gil
+#January 24rd, 2023
+
 #Stocks
 
 num_shares= 2000

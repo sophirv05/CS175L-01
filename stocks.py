@@ -5,10 +5,10 @@
 
 #Stocks
 
-num_shares= 2000
-purchase_price= 40.0
-selling_price= 42.75
-commission_rate= 0.03
+num_shares= float(input('Number of shares:'))
+purchase_price=float(input('Purchased price:'))
+selling_price=float(input('Selling price:'))
+commission_rate=float(input('Commission rate:'))
 
 amountPaidForStock = num_shares * purchase_price
 purchaseCommission = commission_rate * amountPaidForStock

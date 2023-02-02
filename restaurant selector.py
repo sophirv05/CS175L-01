@@ -8,33 +8,33 @@ vegan= False
 gluten_free= False
 
 answer1= input('Is anyone in your party a vegetarian? ')
-if answer1 == 'yes' and 'Yes':
-    vegetarian = True
+answer1lower=answer1.lower()
+if answer1 == 'yes':
+    vegetarian = True  
 
 answer2= input('Is anyone in your party a vegan? ')
-if answer2 == 'yes'and 'Yes':
+answer2lower=answer2.lower()
+if answer2 == 'yes':
     vegan = True
 
 answer3= input('Is anyone in your party gluten-free? ')
-if answer3 == 'yes'and 'Yes':
+answer3lower=answer3.lower()
+if answer3 == 'yes':
     gluten_free = True
 
-print('Here are your restaurant choices: ')
+print('\nHere are your restaurant choices:')
     
-if vegetarian == False and vegan == False and gluten_free == False:
-    print("    Joe's Gourment Burgers")
+if not vegetarian and not vegan and gluten_free:
+    print("Joe's Gourmet Burgers")
 
-if vegetarian == True and vegan == False and gluten_free == True:
-    print("    Main Street Pizza Company")
+elif not vegan and not gluten_free:
+    print("Mama's Fine Italian")
 
-if vegetarian == True and vegan == True and gluten_free == True:
-    print("    Corner Café")
+elif not vegan:
+    print("Main Street Pizza")
 
-if vegetarian == True and vegan == False and gluten_free == False:
-    print("    Mama's Fine Italian")
-
-if vegetarian == True and vegan == True and gluten_free == True:
-    print("    The Chef's Kitchen")
+print("Corner Cafe")
+print("Chef's Kitchen")
     
 
     

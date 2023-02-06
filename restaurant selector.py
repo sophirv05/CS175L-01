@@ -3,12 +3,13 @@
 #restaurant V2
 #Professor Gil
 
-vegetarian= False
-vegan= False
-gluten_free= False
-
 keep_going= 'yes'
 while keep_going =='yes':
+    
+    vegetarian= False
+    vegan= False
+    gluten_free= False
+
     answer1= input('Is anyone in your party a vegetarian? ')
     answer1lower=answer1.lower()
     if answer1 == 'yes':
